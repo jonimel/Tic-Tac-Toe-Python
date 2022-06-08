@@ -1,4 +1,4 @@
-# final-project
+# Tic Tac Toe Game 
 
 import tkinter as tk
 from tkinter import *
@@ -9,8 +9,8 @@ import csv
 import matplotlib.pyplot as plt
 import pandas as pd
 
-turn = 1 #מגדיר של מי התור
-counter = 1 #ממספר את התור עד ל10
+turn = 1 #Define turn
+counter = 1 
 scoreplayer1 = 0
 scoreplayer2 = 0
 
@@ -34,7 +34,7 @@ def tictactoe():
                 font=('DAVID 10 bold'))
     lbl.grid(column=1)
 
-    def push1(): #נקבל טקסט של הכפתור
+    def push1(): #button text 
         global turn
         if btn1["text"] == " ":
             if turn == 1:
